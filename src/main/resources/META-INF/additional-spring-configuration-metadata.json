@@ -1,0 +1,9 @@
+{
+	"properties": [
+		{
+			"name": "asilva.client.address.url",
+			"type": "java.lang.String",
+			"description": "A description for 'asilva.client.address.url'"
+		}
+	]
+}
