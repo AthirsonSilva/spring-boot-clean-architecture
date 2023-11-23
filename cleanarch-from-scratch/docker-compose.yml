@@ -1,9 +1,9 @@
 version: "3.8"
 
 services:
-  cleanarch-from-ntier:
-    container_name: cleanarch-from-ntier
-    image: cleanarch-from-ntier:latest
+  cleanarch-from-scratch:
+    container_name: cleanarch-from-scratch
+    image: cleanarch-from-scratch:latest
     build:
       context: ./
       dockerfile: Dockerfile

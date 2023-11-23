@@ -1,24 +1,26 @@
 # Spring boot cleanarch
 
-A really simple Spring Boot and H2 RESTful API built following the Clean Architecture.
+Repository containing two simple Spring Boot applications that each follows Uncle Bob's Clean Architecture project architecture. The objective of this repository is simple: To learn about Clean Architecture and how to built scalable, maintanable and testable application with it.
 
 ## Features
 
 - Create, read, update, and delete records
   
-- Store information in H2 database
+- Store information in H2/ MongoDB database
 
 ## Architecture
 
 The applications in this repository are built using Spring Boot and following the Clean Architecture, a design pattern that is composed of several layers, each with its own distinct responsibilities. Here’s a brief overview of each layer:
 
-- `Entities`: This layer represents the core business objects or concepts that the application is concerned with. It contains the business rules and logic that define the behavior of the application.
+![Uncle Bob's Clean Architecture in an image](docs/cleanarch.png)
+
+- `Entities/ Domain Objects`: This layer represents the core business objects or concepts that the application is concerned with. It contains the business rules and logic that define the behavior of the application.
 
 - `Use Cases`: This layer represents the specific actions or operations that can be performed on the entities. It contains the application-specific business rules and logic that define how the entities are used.
 
-- `Interfaces`: This layer defines how the domain layer interacts with the other layers of the application, such as the presentation and infrastructure layers. It contains the interfaces that the other layers use to communicate with the domain layer.
+- `Interfaces/ Data Provider`: This layer defines how the domain layer interacts with the other layers of the application, such as the presentation and infrastructure layers. It contains the interfaces that the other layers use to communicate with the domain layer.
 
-- `Infrastructure`: This layer represents the implementation details of the application, such as the database, file system, or external services. It contains the concrete implementations of the interfaces defined in the domain layer.
+- `Infrastructure/ Entrypoint`: This layer represents the implementation details of the application, such as the database, file system, or external services. It contains the concrete implementations of the interfaces defined in the domain layer.
 
 ### Advantages of using Clean Architecture
 
@@ -53,10 +55,18 @@ git clone https://github.com/athirsonsilva/spring-boot-cleanarch.git
 cd spring-boot-cleanarch
 ```
 
-3. To run any application, change to one directory and run
-  
-```bash
-./mvnw spring-boot:run
-```
+3. How to run the applications
+
+   1. To run `cleanarch-from-ntier` application, change to its directory and run
+     
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+
+   2. To run `cleanarch-from-scratch` application, change to its directory and run
+     
+   ```bash
+   ./gradlew bootRun
+   ```
 
 The application will start and be available at `http://localhost:8080`. When accessing the address, you will see the Swagger UI documentation screen.
