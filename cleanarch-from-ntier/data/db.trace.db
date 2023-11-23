@@ -1,0 +1,15 @@
+2023-11-18 21:27:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" not found (candidates are: "USER"); SQL statement:
+INSERT INTO "user" ("EMAIL", "PASSWORD", "USERNAME") VALUES (?, ?, ?) [42103-214]
+2023-11-18 21:32:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" not found (candidates are: "USER"); SQL statement:
+INSERT INTO "user" ("EMAIL", "PASSWORD", "USERNAME") VALUES (?, ?, ?) [42103-214]
+2023-11-18 21:32:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" not found (candidates are: "USER"); SQL statement:
+INSERT INTO "user" ("EMAIL", "PASSWORD", "USERNAME") VALUES (?, ?, ?) [42103-214]
+2023-11-18 21:33:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" not found (candidates are: "USER"); SQL statement:
+INSERT INTO "user" ("EMAIL", "PASSWORD", "USERNAME") VALUES (?, ?, ?) [42103-214]
+2023-11-18 21:56:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "user" not found (candidates are: "USER"); SQL statement:
+INSERT INTO "user" ("EMAIL", "PASSWORD", "USERNAME") VALUES (?, ?, ?) [42103-214]
