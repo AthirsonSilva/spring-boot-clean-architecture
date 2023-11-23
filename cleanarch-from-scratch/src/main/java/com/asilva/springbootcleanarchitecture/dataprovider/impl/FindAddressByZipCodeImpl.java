@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 import com.asilva.springbootcleanarchitecture.core.dataprovider.FindAddressByZipCode;
 import com.asilva.springbootcleanarchitecture.core.domain.Address;
 import com.asilva.springbootcleanarchitecture.dataprovider.client.FindAddressByZipCodeClient;
-import com.asilva.springbootcleanarchitecture.dataprovider.client.dto.response.AddressResponseDto;
 import com.asilva.springbootcleanarchitecture.dataprovider.client.mapper.AddressResponseMapper;
+import com.asilva.springbootcleanarchitecture.entrypoint.dto.response.AddressResponseDto;
 
 import lombok.RequiredArgsConstructor;
 

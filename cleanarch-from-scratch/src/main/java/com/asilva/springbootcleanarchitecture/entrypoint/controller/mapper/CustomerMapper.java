@@ -5,7 +5,8 @@ import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 
 import com.asilva.springbootcleanarchitecture.core.domain.Customer;
-import com.asilva.springbootcleanarchitecture.entrypoint.controller.dto.request.CustomerRequest;
+import com.asilva.springbootcleanarchitecture.entrypoint.dto.request.CustomerRequestDto;
+import com.asilva.springbootcleanarchitecture.entrypoint.dto.response.CustomerResponseDto;
 
 @Mapper(componentModel = "spring")
 public interface CustomerMapper {
@@ -15,6 +16,8 @@ public interface CustomerMapper {
 			@Mapping(target = "address", ignore = true),
 			@Mapping(target = "isValidCpf", ignore = true),
 	})
-	public Customer toDomain(final CustomerRequest customer);
+	public Customer toDomain(final CustomerRequestDto customer);
+
+	public CustomerResponseDto toResponse(final Customer customer);
 
 }

@@ -10,4 +10,6 @@ public interface CustomerEntityMapper {
 
 	public CustomerEntity toEntity(final Customer address);
 
+	public Customer toDomain(final CustomerEntity addressEntity);
+
 }

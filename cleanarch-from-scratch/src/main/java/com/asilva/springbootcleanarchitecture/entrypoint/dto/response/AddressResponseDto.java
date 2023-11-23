@@ -1,4 +1,4 @@
-package com.asilva.springbootcleanarchitecture.dataprovider.client.dto.response;
+package com.asilva.springbootcleanarchitecture.entrypoint.dto.response;
 
 import lombok.Data;
 

@@ -1,11 +1,11 @@
-package com.asilva.springbootcleanarchitecture.entrypoint.controller.dto.request;
+package com.asilva.springbootcleanarchitecture.entrypoint.dto.request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Data
-public class CustomerRequest {
+public class CustomerRequestDto {
 
 	@NotBlank(message = "Name is required")
 	private String name;
