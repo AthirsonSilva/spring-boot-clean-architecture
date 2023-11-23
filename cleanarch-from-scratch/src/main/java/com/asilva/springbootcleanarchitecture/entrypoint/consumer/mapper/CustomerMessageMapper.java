@@ -9,7 +9,7 @@ import com.asilva.springbootcleanarchitecture.entrypoint.consumer.message.Custom
 @Mapper(componentModel = "spring")
 public interface CustomerMessageMapper {
 
-	@Mapping(target = "zipCode", ignore = true)
+	@Mapping(target = "address", ignore = true)
 	Customer toDomain(final CustomerMessage customerMessage);
 
 }
