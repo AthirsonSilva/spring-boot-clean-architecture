@@ -26,7 +26,7 @@ public class KafkaConsumerConfig {
 	protected ConsumerFactory<String, CustomerMessage> consumerFactory() {
 		HashMap<String, Object> props = new HashMap<>();
 		props.put(BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-		props.put(GROUP_ID_CONFIG, "arantes");
+		props.put(GROUP_ID_CONFIG, "cleanarch");
 		props.put(KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
 		props.put(VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
 		props.put(AUTO_OFFSET_RESET_CONFIG, "earliest");
