@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  cleanarch-from-ntier:
+    container_name: cleanarch-from-ntier
+    image: cleanarch-from-ntier:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: on-failure
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 700M
+      restart_policy:
+        condition: on-failure
